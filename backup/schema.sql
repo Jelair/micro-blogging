@@ -1,12 +1,12 @@
 -- schema.sql
 
-drop database if exists mblog;
+drop database if exists microblog;
 
-create database mblog;
+create database microblog;
 
-use mblog;
+use microblog;
 
-grant select, insert, update, delete on mblog.* to 'www-data'@'localhost' identified by 'www-data';
+grant select, insert, update, delete on microblog.* to 'root'@'localhost' identified by 'www-data';
 
 create table users (
     `id` varchar(50) not null,
